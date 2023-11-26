@@ -5,9 +5,11 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Hohoho I know right!";
+  question.innerHTML = "Yay, I know Diogo is the bigger person! I'm happy now!";
   gif.src =
     "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+  yesBtn.style.display = "none";
+  noBtn.style.display = "none";
 });
 
 noBtn.addEventListener("mouseover", () => {
@@ -20,6 +22,4 @@ noBtn.addEventListener("mouseover", () => {
 
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
-  yesBtn.style.display = "none";
-  noBtn.style.display = "none";
 });
